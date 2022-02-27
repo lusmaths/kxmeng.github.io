@@ -50,7 +50,7 @@
             }
         }
     </style>
-    <title>AL Revision Site</title>
+    <title>AL Paper 2 Revision</title>
     <!-- MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script>
@@ -79,20 +79,53 @@
             </div>
             <!-- List of topics -->
             <div class="flex flex-col flex-grow p-4 overflow-auto font-indie-flower" id="topic-list">
-                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-gray-300 dark:border-gray-800" id="revisionTips" href="#">
-                    <span class="leading-none">Revision Tips</span>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="proof" href="#">
+                    <span class="leading-none">Proof</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="equations" href="#">
+                    <span class="leading-none">Equations</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="functions" href="#">
+                    <span class="leading-none">Functions</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="sequences" href="#">
+                    <span class="leading-none">Sequences</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="differentiation" href="#">
+                    <span class="leading-none">Differentiation</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="integration" href="#">
+                    <span class="leading-none">Integration</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="differential" href="#">
+                    <span class="leading-none">Differential equations</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="vectors" href="#">
+                    <span class="leading-none">Vectors</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="data" href="#">
+                    <span class="leading-none">Data representation</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="probability" href="#">
+                    <span class="leading-none">Probability</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="normal" href="#">
+                    <span class="leading-none">Normal distribution</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 border-violet-300 dark:border-violet-700" id="hypothesis" href="#">
+                    <span class="leading-none">Hypothesis tests</span>
                 </a>
             </div>
         </div>
         <div class="flex flex-col flex-grow">
             <div class="flex justify-end items-center flex-shrink-0 h-16 px-8 font-indie-flower">
-                <a class="flex items-center justify-end h-10 px-4 ml-2 text-sm font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300 dark:bg-gray-800 bg-gray-300" href="#">
+                <a class="flex items-center justify-end h-10 px-4 ml-2 text-sm font-medium rounded dark:hover:bg-gray-800 hover:bg-gray-300" href="./">
                     Home
                 </a>
                 <a class="flex items-center justify-end h-10 px-4 ml-2 text-sm font-medium rounded dark:hover:bg-rose-900 hover:bg-rose-200" href="./paper1.html">
                     Paper 1
                 </a>
-                <a class="flex items-center justify-end h-10 px-4 ml-2 text-sm font-medium rounded dark:hover:bg-violet-900 hover:bg-violet-200" href="./paper2.html">
+                <a class="flex items-center justify-end h-10 px-4 ml-2 text-sm font-medium dark:bg-violet-900 bg-violet-200 rounded dark:hover:bg-violet-900 hover:bg-violet-200" href="#">
                     Paper 2
                 </a>
                 <a class="flex items-center justify-end h-10 px-4 ml-2 text-sm font-medium rounded dark:hover:bg-sky-900 hover:bg-sky-200" href="./paper3.html">
@@ -102,18 +135,20 @@
             <div class="flex-grow p-6 overflow-auto bg-gray-200 dark:bg-gray-800">
                 <div class="h-full flex flex-row justify-evenly">
                     <!-- Content - questions go here -->
-                    <div class="flex flex-col basis-3/4 allQs overflow-y-auto overflow-x-hidden" id="allQs">
-                        <div class="bg-white dark:bg-gray-700 p-3 m-4">
-                            Hopefully this will help with your revision.
-                        </div>
+                    <div class="flex flex-col basis-2/3 allQs overflow-y-auto overflow-x-hidden" id="allQs">
+                        <div class="bg-white dark:bg-gray-700 border border-violet-300 dark:border-violet-700 p-3 m-4">Paper 2 Revision</div>
                     </div>
+                    <div class="basis-1/4 flex flex-col justify-center timer-container">
+                        <button class="w-48 dark:bg-violet-900 dark:hover:bg-violet-800 bg-white hover:bg-violet-300 border border-violet-300 dark:border-violet-700 p-4 rounded-full place-self-center dark:text-violet-300 text-violet-700" id="timer" start="start">Start 30 min timer</button>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 </body>
 <!-- Load questions from object called qs -->
-<script src="home.js" ></script>
+<script src="q2.js" ></script>
 <script type="text/javascript">
     // Function to navigate with sidebar items
     let highlightTopic = function() {
@@ -142,7 +177,7 @@
             };
             // Create new questions
             let emptyDiv = document.createElement("div");
-            emptyDiv.classList.add("bg-white", "dark:bg-gray-700", "border", "border-gray-300", "dark:border-gray-800", "p-3", "m-4", "addNew");
+            emptyDiv.classList.add("bg-white", "dark:bg-gray-700", "border", "border-violet-300", "dark:border-violet-700", "p-3", "m-4", "addNew");
             for (let i = 0; i < numQs; i++) {
                 let newDiv = emptyDiv.cloneNode();
                 newDiv.innerHTML = qs[currentId][i].question;
